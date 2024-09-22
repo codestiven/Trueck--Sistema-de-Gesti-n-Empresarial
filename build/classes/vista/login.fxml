@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="ventana" accessibleText="bac" maxHeight="537.0" maxWidth="794.0" minHeight="537.0" minWidth="794.0" prefHeight="537.0" prefWidth="794.0" style="-fx-background-color: rgba(255, 255, 255, 0);" stylesheets="@css/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.loginController">
+   <children>
+      <PasswordField id="input" fx:id="contraseña" layoutX="468.0" layoutY="283.0" prefHeight="33.0" prefWidth="283.0" promptText="contraseña" stylesheets="@css/Style.css">
+         <font>
+            <Font size="20.0" />
+         </font></PasswordField>
+      <TextField id="input" fx:id="correo" layoutX="468.0" layoutY="224.0" prefHeight="33.0" prefWidth="283.0" promptText="correo electronico" stylesheets="@css/Style.css">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Hyperlink layoutX="526.0" layoutY="428.0" text="se me olvido la contraseña">
+         <font>
+            <Font size="15.0" />
+         </font></Hyperlink>
+      <Pane id="ilus" layoutX="14.0" layoutY="14.0" prefHeight="510.0" prefWidth="434.0" stylesheets="@css/Style.css">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="393.0" layoutX="21.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="48.0" layoutX="14.0" layoutY="14.0">
+               <image>
+                  <Image url="@img/logoB.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="154.0" fitWidth="149.0" layoutX="271.0" layoutY="393.0">
+               <image>
+                  <Image url="@img/imgname.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fill="#000e48" layoutX="473.0" layoutY="183.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de Seccion" textAlignment="CENTER" wrappingWidth="293.46875">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Circle fill="#dddddd" layoutX="609.0" layoutY="89.0" radius="43.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="52.0" fitWidth="55.0" layoutX="582.0" layoutY="63.0">
+         <image>
+            <Image url="@img/USUARIO.png" />
+         </image>
+      </ImageView>
+      <Line endX="152.0" layoutX="582.0" layoutY="268.0" startX="-100.0" strokeWidth="0.2" />
+      <Line endX="152.0" layoutX="583.0" layoutY="326.0" startX="-100.0" strokeWidth="0.2" />
+      <HBox alignment="TOP_CENTER" layoutX="478.0" layoutY="372.0" prefHeight="37.0" prefWidth="283.0" spacing="20.0">
+         <children>
+            <Button id="boton" fx:id="btn_inicio" onMouseClicked="#verificar" prefHeight="35.0" prefWidth="145.0" stylesheets="@css/Style.css" text="Iniciar" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="boton2" fx:id="btn_registro" onMouseClicked="#ing_refistro" prefHeight="36.0" prefWidth="154.0" stylesheets="@css/Style.css" text="Registrarse" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="inco" layoutX="203.0" layoutY="20.0" prefHeight="52.0" prefWidth="490.0" style="-fx-background-color: rgba(255, 0, 0, 0.17); -fx-background-radius: 20px;" text="el correo o la contraseña estan incorrecto" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

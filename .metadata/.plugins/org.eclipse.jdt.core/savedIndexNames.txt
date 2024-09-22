@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+D:\cosas\tareas\3er cuatrimestre\Programacion 1\proyecto final\proyecto final\trueck\trueck\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index

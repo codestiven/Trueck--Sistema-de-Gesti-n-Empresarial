@@ -1,0 +1,197 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 dic 2022, 1:21:19 p. m.
+    Author     : stive
+*/
+
+
+
+/* @font-face {
+    font-family: "Xillian Regular";
+    src: url("Xillian\ Regular.otf");
+} */
+
+
+#ventana{
+        -fx-background-color: #fff;
+
+        -fx-background-insets: 50;
+}
+#ilus{
+    -fx-background-color:#9BB8FF;
+    -fx-background-radius:35px
+}
+
+#boton {
+    -fx-background-color: #FF9B9B;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+
+#boton:hover{
+    -fx-background-color: #f56868;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+
+#boton:pressed{
+    -fx-background-color: #c91d1d;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+#boton2 {
+    -fx-background-color: #7098FC;
+    -fx-background-radius: 10px;
+
+}
+
+#boton2:hover {
+    -fx-background-color: #3a72ff;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+
+#boton2:pressed {
+    -fx-background-color: #1d3cc9;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+
+
+#text{
+    -fx-font-family:"Xillian Family";
+}
+#input {
+        -fx-background-color: none;
+    -fx-border-bottom: #f56868;
+}
+
+
+#input_mal{
+    -fx-background-color: #ffcece;
+    -fx-border-bottom: #f56868;
+}
+
+.split-pane:horizontal>.split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+.split-pane:vertical>.split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+
+
+
+/*ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd - registro*/
+
+#cuadro_r{
+    -fx-background-color: linear-gradient(to top right, #16337A, #2C66F3 65%);
+        -fx-background-radius: 40px;
+
+}
+#input_r{
+    -fx-border-color: rgb(172, 172, 172);
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 15px;
+
+}
+
+#input_rr {
+    -fx-border-color: rgb(172, 172, 172);
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-background-color: #FFFFFF;
+
+}
+
+
+
+
+#btn_r{
+    -fx-background-color: #7098FC;
+    -fx-background-radius: 10px;
+
+}
+
+#btn_r:hover {
+    -fx-background-color: #3a72ff;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+
+#btn_r:pressed {
+    -fx-background-color: #1d3cc9;
+    -fx-background-radius: 10px;
+    -fx-color: red;
+}
+
+
+
+
+/*ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd - interfaz principal*/
+
+
+#izquierda{
+    -fx-background-color: #dddddd;
+}
+
+#btn_c{
+
+-fx-background-color:none;
+
+-fx-font-smoothing-type: lcd;
+-fx-fill: rgb(0, 0, 0);
+-fx-font-size: 15px;
+-fx-font-weight: 900;
+-fx-text-fill: #000000;
+}
+
+#btn_cc {
+
+    -fx-background-color: none;
+
+
+}
+#btn_cc:hover{
+
+    -fx-background-color: #c2c2c2;
+
+
+}
+#btn_cc:pressed{
+
+    -fx-background-color: #acacac;
+
+
+}
+
+
+/*panel-productos*/
+.tab-pane *.tab-header-area *.tab-header-background {
+    -fx-background-color: transparent;
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 120px;
+    -fx-tab-min-height: 50px;
+    -fx-tab-max-height: 50px;
+}
+
+.tab {
+    -fx-font-family: Arial;
+    -fx-font-size: 15;
+    -fx-background-color: #9BB8FF;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 20px;
+    -fx-margin: 100px;
+
+}
+
+.tab:selected {
+    -fx-background-color: #3C5BA7;
+}

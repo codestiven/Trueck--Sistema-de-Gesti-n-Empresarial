@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="879.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.registroController">
+   <children>
+      <Pane id="cuadro_r" layoutX="29.0" layoutY="21.0" prefHeight="527.0" prefWidth="348.0" stylesheets="@css/Style.css">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="212.0" layoutX="68.0" layoutY="139.0">
+               <image>
+                  <Image url="@img/logoB.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField id="input_r" fx:id="nombre" layoutX="414.0" layoutY="143.0" prefHeight="30.0" prefWidth="176.0" stylesheets="@css/Style.css">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </TextField>
+      <TextField id="input_r" fx:id="apellido" layoutX="623.0" layoutY="143.0" prefHeight="30.0" prefWidth="193.0" stylesheets="@css/Style.css" />
+      <Label layoutX="461.0" layoutY="61.0" text="Ingrese sus credenciales" textFill="#000f4a">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Text fill="#6f6f6f" layoutX="414.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6f6f6f" layoutX="628.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField id="input_r" fx:id="correo" layoutX="410.0" layoutY="223.0" prefHeight="30.0" prefWidth="410.0" promptText="example@login.com" stylesheets="@css/Style.css" />
+      <Text fill="#6f6f6f" layoutX="410.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo Electronico" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#6f6f6f" layoutX="412.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <DatePicker id="input_r" fx:id="edad" editable="false" layoutX="406.0" layoutY="364.0" prefHeight="30.0" prefWidth="212.0" stylesheets="@css/Style.css" />
+      <ComboBox id="input_rr" fx:id="sexo" layoutX="628.0" layoutY="364.0" prefHeight="31.0" prefWidth="193.0" promptText="Genero" stylesheets="@css/Style.css" />
+      <Text fill="#6f6f6f" layoutX="413.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de nacimiento" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button id="btn_r" fx:id="btn_r" layoutX="567.0" layoutY="495.0" onMouseClicked="#ing_refistro" prefHeight="40.0" prefWidth="112.0" stylesheets="@css/Style.css" text="Registrarse" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <PasswordField id="input_r" fx:id="contraseña" layoutX="410.0" layoutY="294.0" prefHeight="30.0" prefWidth="410.0" stylesheets="@css/Style.css" />
+      <Text fill="#6f6f6f" layoutX="412.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de telefono" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField id="input_r" fx:id="telefono" layoutX="413.0" layoutY="447.0" prefHeight="30.0" prefWidth="410.0" stylesheets="@css/Style.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="5.0E8" maxWidth="5000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.Paneles.ProductosController">
+   <children>
+      <HBox prefHeight="74.0" prefWidth="600.0" style="-fx-background-color: red;" />
+      <VBox maxHeight="5.0E23" maxWidth="5.0E24" prefHeight="499.0" prefWidth="769.0" style="-fx-background-color: blue;" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

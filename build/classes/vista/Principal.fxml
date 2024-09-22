@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="Principal" maxHeight="1.0E23" maxWidth="1.0E18" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1184.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.principalController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="0.0" prefWidth="246.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="965.0" minWidth="10.0" prefWidth="938.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox id="izquierda" fx:id="Menu" prefHeight="691.0" prefWidth="213.0" stylesheets="@css/Style.css">
+         <children>
+            <HBox fx:id="usuario" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@img/icons8-usuario-de-género-neutro-96.png" />
+                     </image></ImageView>
+                  <Label prefHeight="59.0" prefWidth="90.0" text="Stiven de la rosa" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <VBox fx:id="botones" prefHeight="278.0" prefWidth="170.0" spacing="10.0">
+               <children>
+                  <HBox id="btn_cc" fx:id="btn_inicio" alignment="CENTER" onMouseClicked="#Abrir_inicio" prefHeight="58.0" prefWidth="157.0" spacing="20.0" stylesheets="@css/Style.css">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="35.0" onMouseClicked="#Abrir_inicio">
+                           <image>
+                              <Image url="@img/homeG.png" />
+                           </image>
+                        </ImageView>
+                        <Button id="btn_c" mnemonicParsing="false" onMouseClicked="#Abrir_inicio" prefHeight="25.0" prefWidth="100.0" stylesheets="@css/Style.css" text="Inicio" />
+                     </children>
+                  </HBox>
+                  <HBox id="btn_cc" fx:id="btn_producto" alignment="CENTER" onMouseClicked="#Abrir_productor" prefHeight="58.0" prefWidth="157.0" spacing="20.0" stylesheets="@css/Style.css">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="34.0" onMouseClicked="#Abrir_productor">
+                           <image>
+                              <Image url="@img/shopping-cartG.png" />
+                           </image>
+                        </ImageView>
+                        <Button id="btn_c" mnemonicParsing="false" onMouseClicked="#Abrir_productor" prefHeight="25.0" prefWidth="100.0" stylesheets="@css/Style.css" text="Productos" />
+                     </children>
+                  </HBox>
+                  <HBox id="btn_cc" fx:id="btn_deudas" alignment="CENTER" onMouseClicked="#Abrir_deudas" prefHeight="51.0" prefWidth="157.0" spacing="20.0" stylesheets="@css/Style.css">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" onMouseClicked="#Abrir_deudas">
+                           <image>
+                              <Image url="@img/dollar-signG.png" />
+                           </image>
+                        </ImageView>
+                        <Button id="btn_c" mnemonicParsing="false" onMouseClicked="#Abrir_deudas" prefHeight="25.0" prefWidth="100.0" stylesheets="@css/Style.css" text="Deudas" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <BorderPane fx:id="Paneles" style="-fx-background-color: red;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="691.0" prefWidth="916.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>

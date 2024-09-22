@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.pruevaController">
+   <left>
+      <VBox fx:id="vbMenu" alignment="TOP_CENTER" prefHeight="400.0" prefWidth="121.0" spacing="20.0" style="-fx-background-color: #616A6B;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="125.0" text="MENU" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPanel1" mnemonicParsing="false" onMouseClicked="#panel1" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-border-color: red; -fx-border-width: 0px 0px 1px 1px;" text="PANEL 1" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="btnPanel2" mnemonicParsing="false" onMouseClicked="#panel2" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: transparent; -fx-border-color: red; -fx-border-width: 0px 0px 1px 1px;" text="PANEL 2" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="btnPanel3" mnemonicParsing="false" onMouseClicked="#panel3" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: transparent; -fx-border-color: red; -fx-border-width: 0px 0px 1px 1px;" text="PANEL 3" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="apPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2C3E50;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblContenedor" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="137.0" prefHeight="127.0" prefWidth="384.0" text="CONTENEDOR" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
